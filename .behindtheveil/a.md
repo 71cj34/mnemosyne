@@ -30,7 +30,6 @@
                 output.textContent += digits;
             }
 
-            // Initial 1000 digits
             generateDigits(100000);
 
             const obs = new IntersectionObserver(
@@ -90,12 +89,12 @@
 ```
 
 ```deadend.html
-function renderSevens() {
+function fortynine() {
     const body = document.body;
     const testStr = "7".repeat(100);
 
     const measure = document.createElement("div");
-    measure.style.font = "16px monospace";
+    measure.style.font = "1.7777777em monospace";
     measure.style.position = "absolute";
     measure.style.visibility = "hidden";
     measure.textContent = testStr;
@@ -116,6 +115,6 @@ function renderSevens() {
     body.textContent = ("7".repeat(cols) + "\n").repeat(rows);
 }
 
-window.onresize = renderSevens;
-renderSevens();
+window.onresize = fortynine;
+fortynine();
 ```
